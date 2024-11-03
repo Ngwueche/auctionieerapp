@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionService", "AuctionieerApp\AuctionService.csproj", "{E0CDE74B-684E-4155-8402-9EA339C3A2AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auctionieer.Shared", "Auctionieer.Shared\Auctionieer.Shared.csproj", "{3C3FC4C0-2E35-48AF-893B-239708AD850D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionService.Data", "Auctionieer.Data\AuctionService.Data.csproj", "{66C2E904-197B-48DF-A99E-F11BD0EBBEE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionService.Domain", "Auctionieer.Domain\AuctionService.Domain.csproj", "{3BC4747D-C291-4FF6-B545-6D2E081A7B3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auctionieer.AuctionService", "Auctionieer.AuctionService", "{C8AC957A-BC76-46B1-81B3-56CF07FBEF17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.Application", "AuctionService.Application\AuctionService.Application.csproj", "{807549F7-5F2D-4D03-8414-1106C04F8445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.Infrastructure", "AuctionService.Infrastructure\AuctionService.Infrastructure.csproj", "{33547338-CD39-4ED4-BE2F-586168B1D7E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0CDE74B-684E-4155-8402-9EA339C3A2AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CDE74B-684E-4155-8402-9EA339C3A2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CDE74B-684E-4155-8402-9EA339C3A2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CDE74B-684E-4155-8402-9EA339C3A2AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3FC4C0-2E35-48AF-893B-239708AD850D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3FC4C0-2E35-48AF-893B-239708AD850D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3FC4C0-2E35-48AF-893B-239708AD850D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3FC4C0-2E35-48AF-893B-239708AD850D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C2E904-197B-48DF-A99E-F11BD0EBBEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C2E904-197B-48DF-A99E-F11BD0EBBEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C2E904-197B-48DF-A99E-F11BD0EBBEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C2E904-197B-48DF-A99E-F11BD0EBBEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC4747D-C291-4FF6-B545-6D2E081A7B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC4747D-C291-4FF6-B545-6D2E081A7B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC4747D-C291-4FF6-B545-6D2E081A7B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC4747D-C291-4FF6-B545-6D2E081A7B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{807549F7-5F2D-4D03-8414-1106C04F8445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{807549F7-5F2D-4D03-8414-1106C04F8445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{807549F7-5F2D-4D03-8414-1106C04F8445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{807549F7-5F2D-4D03-8414-1106C04F8445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33547338-CD39-4ED4-BE2F-586168B1D7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33547338-CD39-4ED4-BE2F-586168B1D7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33547338-CD39-4ED4-BE2F-586168B1D7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33547338-CD39-4ED4-BE2F-586168B1D7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E0CDE74B-684E-4155-8402-9EA339C3A2AC} = {C8AC957A-BC76-46B1-81B3-56CF07FBEF17}
+		{66C2E904-197B-48DF-A99E-F11BD0EBBEE6} = {C8AC957A-BC76-46B1-81B3-56CF07FBEF17}
+		{3BC4747D-C291-4FF6-B545-6D2E081A7B3B} = {C8AC957A-BC76-46B1-81B3-56CF07FBEF17}
+		{807549F7-5F2D-4D03-8414-1106C04F8445} = {C8AC957A-BC76-46B1-81B3-56CF07FBEF17}
+		{33547338-CD39-4ED4-BE2F-586168B1D7E4} = {C8AC957A-BC76-46B1-81B3-56CF07FBEF17}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC2B1085-62D6-431A-B206-E521CDEBE374}
+	EndGlobalSection
+EndGlobal
