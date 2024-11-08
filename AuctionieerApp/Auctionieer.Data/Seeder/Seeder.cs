@@ -24,7 +24,7 @@ public static class Seeder
                 new()  { Name = RoleConstants.User, NormalizedName = RoleConstants.User},
                 new()  { Name = RoleConstants.Admin, NormalizedName = RoleConstants.Admin }
             };
-        
+
             await context.Roles.AddRangeAsync(roles);
             await context.SaveChangesAsync();
             var userManager = app.ApplicationServices.CreateScope().ServiceProvider
@@ -41,8 +41,8 @@ public static class Seeder
             await userManager.AddToRoleAsync(user, RoleConstants.Admin);
             var config = app.ApplicationServices.CreateScope().ServiceProvider
                 .GetRequiredService<IConfiguration>();
-            var dataGenerator = new DbSeederGenerator(context, userManager, config);
-           await  dataGenerator.Run();
+            var dataGenerator = new DbSeederGenerator(context, userManager);
+            await dataGenerator.Run();
         }
     }
 }

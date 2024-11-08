@@ -3,8 +3,8 @@ using AuctionService.Domain.Constants;
 using AuctionService.Domain.Entities;
 using Bogus;
 using Microsoft.AspNetCore.Identity;
-using System.Collections;
 using Microsoft.Extensions.Configuration;
+using System.Collections;
 
 namespace AuctionService.Data.Seeder;
 
@@ -14,11 +14,10 @@ public class DbSeederGenerator
     private readonly UserManager<User> _userManager;
     private readonly IConfiguration _configuration;
 
-    public DbSeederGenerator(ApplicationDbContext context, UserManager<User> userManager, IConfiguration configuration)
+    public DbSeederGenerator(ApplicationDbContext context, UserManager<User> userManager)
     {
         _context = context;
         _userManager = userManager;
-        _configuration = configuration;
     }
 
     public async Task Run()
@@ -75,7 +74,7 @@ public class DbSeederGenerator
         _context.Cars.AddRange(cars);
         return cars;
     }
-    private  void SeedBids()
+    private void SeedBids()
     {
         var faker = new Faker("en");
         var carIds = _context.Cars.Select(c => c.Id).ToList();
@@ -89,6 +88,6 @@ public class DbSeederGenerator
             .Generate(20); // Generate 20 bids
 
         _context.Bids.AddRange(bids);
-        
+
     }
 }

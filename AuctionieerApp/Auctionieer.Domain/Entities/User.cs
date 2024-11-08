@@ -12,14 +12,15 @@ public class User : IdentityUser, IAuditable
     // Profile Information
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public string ProfileImageUrl { get; set; } // URL for the profile picture
+    public string? ProfileImageUrl { get; set; } // URL for the profile picture
+    public string AddressId { get; set; }
+    public Address Address { get; set; }
 
     // Financial Screening Status
     public bool IsFinanciallyApproved { get; set; } // Whether user has passed financial screening
     public DateTime? FinancialScreeningDate { get; set; } // Date of last financial screening
     public string FinancialScore { get; set; } // Optional: Score or rating if available
     public string FinancialDocumentsUrl { get; set; } // Link to uploaded financial documents
-
     // Seller-Specific Information
     public ICollection<Car> CarsListed { get; set; } = new List<Car>(); // Cars listed for auction (only for Sellers)
 
@@ -34,7 +35,7 @@ public class User : IdentityUser, IAuditable
 
     // Referral Feature
     public string ReferralCode { get; set; } // Unique code for each user
-    public Ulid? ReferredById { get; set; } // The user who referred this user
+    public string? ReferredById { get; set; } // The user who referred this user
     public User ReferredBy { get; set; }
     public ICollection<User> Referrals { get; set; } = new List<User>(); // Users referred by this user
 

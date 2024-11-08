@@ -33,7 +33,7 @@ namespace AuctionService
 
 
             app.MapControllers();
-            _ = Seeder.Run(app);
+            Seeder.Run(app);
 
             app.Run();
         }
